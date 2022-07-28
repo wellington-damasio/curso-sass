@@ -1,0 +1,20 @@
+@use '../1-base/_variables'
+
+#navbar
+   ul
+      display: flex
+      justify-content: flex-end
+      
+      li
+         margin: .7rem
+         
+         a  
+            background-color: variables.$li-color
+            color:  variables.$primary-color
+            padding:.7rem  
+            transitio: 5s
+
+            &:hover
+               background-color: variables.$bg-color
+               color: variables.$primary-color
+            

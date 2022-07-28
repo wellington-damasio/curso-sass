@@ -1,0 +1,43 @@
+@mixin top-header-info
+   display: flex
+   justify-content: space-between
+
+   & > p
+      margin-right: 15px
+
+@mixin header-basic-style
+   display: flex
+   justify-content: space-between
+   align-items: center
+   color: $secondary-text-color
+   padding-left: 8%
+   padding-right: 8%
+   font-size: .9rem
+
+@mixin rmv-td
+   text-decoration: none
+
+@mixin user-header-interaction
+   margin-right: 15px
+   display: flex
+   flex-direction: column
+   position: relative
+   text-align: center
+
+   .quantity
+      position: absolute
+      right: 3px
+      top: -10px
+      padding: 2px 4px 2px 4px
+      background-color: $primary-color
+      text-align: center
+      border-radius: 50%
+
+@mixin h2-products
+      margin-left: 2.5%
+      margin-bottom: 20px
+      font-size: 1.7rem
+
+@mixin basic-hover
+   color: $primary-color
+   

@@ -1,0 +1,82 @@
+// MIXINS 
+@mixin reset
+    *
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        font-family: 'Lato'
+
+    a
+        text-decoration: none
+
+    li
+        list-style: none
+
+@mixin main-hover
+    transition: .3s
+
+    &:hover
+        color: $primary-color
+
+@mixin title-text-shadow
+    text-shadow: 3px 2px $black
+
+@mixin section-title
+    font-size: 3rem
+    margin-top: 2rem
+    text-align: center
+
+@mixin bg-center
+    background-position: center
+    background-size: cover
+
+@mixin card-hover
+    .job-card-title, .job-card-cover, .job-card-description
+        opacity: 0
+
+    &:hover
+        .job-card-title, .job-card-cover, .job-card-description
+            opacity: 1
+
+// BUTTONS
+.btn
+    padding: .6rem 1rem
+    border: 1px solid $light-color
+    text-transform: uppercase
+    border-radius: 5px
+    color: $light-color
+
+    &:hover
+        border-color: $primary-color
+    
+    &-primary
+        background-color: $primary-color
+        border-color: $primary-color
+    
+        &:hover
+            background-color: transparent
+    &-rounded
+        margin-top: 1rem
+        border-radius: 2rem
+        padding: 1rem
+        font-size: 1.2rem
+    
+.btn-primary-bg-white
+        background-color: $primary-color
+        border-color: $primary-color
+
+        &:hover
+            background-color: transparent
+            color: $primary-color
+
+// MOBILE 
+@mixin mobile
+    @media (max-width: 425px)
+        @content
+
+@mixin card-mobile
+    width: 100%
+    height: 200px
+    margin: 0
+    margin-bottom: 2rem
+

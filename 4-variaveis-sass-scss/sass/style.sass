@@ -1,0 +1,23 @@
+@import 'variables'
+
+body
+    background-color: $bg-color
+
+h1
+    color: $text-color
+    border: $border
+    font-size: $main-font
+
+p 
+    $border: 3px solid blue // shadowing; uma variável tem prioridade sobre outra
+    color: $text-color
+    border: $border
+    font-size: $content-font
+    margin-left: #{$mx + 10px} //12px
+    margin-top: #{$mx + 40px} // 42px
+    padding: #{$mx + 8px} //10px
+    // #{$mx / | + | - | * | ** $second-value}
+
+a 
+    color: $text-color
+    font-size: $content-font

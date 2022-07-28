@@ -1,0 +1,65 @@
+@charset "UTF-8"
+
+@import 'variables'
+@import 'button'
+@import 'mixins'
+@import 'plugins'
+@import 'functions'
+
+body
+    margin: 25px
+    color: text-color(16)
+
+.p-especial
+    @include special
+
+h2
+    @include special
+
+.esp-menor
+    @include create-div(10px, 10px, 200px, 100px, #123, #eee)
+    @extend %font-pattern
+    border: custom-border(4)
+
+.esp-medio
+    @include create-div(10px, 10px, 400px, 100px, #fff, #123)
+    border: 2px solid #123
+    @extend %font-pattern
+
+.esp-maior
+    @include create-div(10px, 10px, 600px, 100px, #123, #eee)
+    @extend %font-pattern
+
+.border-test
+    @include create-div(10px, 10px, 700px, 200px, #123,)
+    @include border(dashed, #0122ff, 10px)
+
+.container-menor 
+    @include create-div(10px, 10px, 500px, 200px)
+    border: custom-border(2)
+
+.container-maior
+    @include create-div(10px, 10px, calc(1400px / 2), 200px)
+    border: custom-border()
+
+$fonts: 40px, 60px, 80px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: calc($font * .2)
+
+@for $i from 1 through 4
+
+    .p-#{$i}
+        font-size: 30px
+        
+        @if $i == 1
+            color: blue
+        @if $i == 2
+            color: purple
+        @if $i == 3
+            color: cyan
+        @if $i == 4
+            color: brown
+         

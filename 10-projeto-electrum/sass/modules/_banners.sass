@@ -1,0 +1,33 @@
+.banner-container
+   display: flex
+   flex-direction: column
+   justify-content: flex-start
+   text-align: left
+   background-color: $primary-color
+   opacity: 0.8
+   color: $secondary-text-color
+   font-weight: bold
+   width: 17%
+   height: 200px
+   border-bottom-right-radius: 50%
+
+   .banner-title
+      font-size: 2rem
+      margin-top: 30px
+      margin-left: 20px
+   a
+      color: $secondary-text-color
+      margin-top: 15px
+      margin-left: 20px
+      font-size: 1.3rem
+
+      .fa-arrow-right
+         font-size: 1rem
+         color: $primary-color
+         background-color: $secondary-text-color
+         padding: 3px
+         border-radius: 50%
+         margin-left: 5px
+   
+   @media (max-width: 425px)
+      width: 70%

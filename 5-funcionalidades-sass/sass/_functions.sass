@@ -1,0 +1,29 @@
+@function text-color($size)
+    $color: #aa00ff
+
+    @if $size > 10px
+        $color: red
+    @else
+        $color: blue
+
+    @return $color
+
+@function custom-border($variation: 1)
+    $border: none
+    $var: 3
+
+    @if $variation > 3
+        @warn "Insert a variation number below #{$var}"
+    @else if $variation == 1
+        $border: 3px solid red
+    @else if $variation == 2
+        $border: 5px solid green
+    @else
+        $border: 7px solid blue
+
+    @return $border
+
+@function custom-width($width, $division: 2)
+    @debug "O valor da width é #{$width / 2}"
+
+    @return calc($width / $division)

@@ -1,0 +1,21 @@
+@use 'sass:map'
+// numbers
+$a : 10rem
+@debug $a + 20
+
+$str1: 'String'
+$str2: TambemString
+
+@debug $str1 == $str2
+
+$font1: 'Verdana'
+$font2: Sans
+
+@debug 'Open-' + $font1 
+
+$font-weight: ('normal': 500, 'bold': 900)
+
+@each $key, $value in $font-weight
+   p-#{$key}
+      font-weight: $value
+

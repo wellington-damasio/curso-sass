@@ -1,0 +1,107 @@
+div, main {
+  background: #ddd;
+  padding: 5px;
+  margin: 10px;
+}
+div p, div h2, main p, main h2 {
+  color: #0077ff;
+}
+
+main p {
+  font-size: 20px;
+}
+main p.kinda-red {
+  color: #dd0044;
+  font-size: 20px;
+}
+
+li {
+  color: #aa00ff;
+}
+
+ol > li {
+  color: #2227aa;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  transform: 0.5s;
+  padding: 10px;
+  border: 1px solid green;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+a:hover {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  background-color: #aaa;
+}
+.container-content {
+  color: #0a0aa9;
+  font-weight: bold;
+}
+
+.spacing {
+  padding: 200px;
+}
+
+.btn {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn:hover {
+  background: transparent;
+  color: blue;
+}
+.btn-success {
+  background: green;
+  border-color: green;
+}
+.btn-success:hover {
+  background: transparent;
+  color: green;
+}
+.btn-danger {
+  background: red;
+  border-color: red;
+}
+.btn-danger:hover {
+  background: transparent;
+  color: red;
+}
+
+.sub-title, .title {
+  border-bottom: 2px dotted red;
+  padding: 10px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  color: #aa00ff;
+}
+
+.sub-title {
+  font-size: 25px;
+  color: #1112ff;
+}
+
+/*# sourceMappingURL=style.css.map */

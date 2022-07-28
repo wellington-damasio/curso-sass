@@ -1,0 +1,25 @@
+body {
+  background-color: #eee;
+}
+
+h1 {
+  color: #123;
+  border: 2px solid red;
+  font-size: 3rem;
+}
+
+p {
+  color: #123;
+  border: 3px solid blue;
+  font-size: 2rem;
+  margin-left: 12px;
+  margin-top: 42px;
+  padding: 10px;
+}
+
+a {
+  color: #123;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

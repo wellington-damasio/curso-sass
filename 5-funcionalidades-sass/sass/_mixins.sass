@@ -1,0 +1,24 @@
+@mixin special
+    color: $sp-color
+    padding: 10px
+    border: 1px solid $sp-color
+    font-weight: bold
+
+    &:hover
+        color: $sp-hover-color
+        border-color: $sp-hover-color
+
+@mixin create-div($padding, $margin, $width, $height, $bg-color: #123, $color: #fff) 
+    padding: $padding
+    margin: $margin
+    width: $width
+    height: $height
+    background-color: $bg-color
+    color: $color
+    text-align: center
+
+    @debug "Width: #{$width}"
+    @debug "Height: #{$height}"
+
+@mixin border($style, $color, $width: 1px)
+    border: $style $width $color

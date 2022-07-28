@@ -1,0 +1,41 @@
+@use 'sass:color'
+@use 'sass:list'
+@use 'sass:meta'
+
+$text-color: color.adjust(#6b717f, $red: 25)
+$bg-color: color.adjust(#6b717f, $red: 55, $blue: 110)
+
+.color-1
+   color: $text-color
+   background-color: $bg-color
+
+$list: 12px, 13px, 20px
+
+@debug list.length($list)
+@debug list.index($list, 13px)
+$list: list.append($list, 50px)
+@debug $list
+
+$list2: 33px, 18px, 99px, 40px
+
+$list3: list.join($list, $list2)
+
+@debug $list3
+@debug list.length($list3)
+@debug list.nth($list3, 7)
+
+@debug meta.inspect($list)
+@debug meta.global-variable-exists('list')
+@debug meta.global-variable-exists(list)
+// @debug meta.global-variable-exists($list) => bug
+@mixin test
+   margin: 0
+   padding: 0
+
+@debug meta.mixin-exists('test')
+@debug meta.type-of(2)
+@debug meta.type-of(string)
+@debug meta.type-of($list)
+@debug meta.type-of(#fff)
+
+
